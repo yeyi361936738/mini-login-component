@@ -1,0 +1,7 @@
+<!--pages/home/home.wxml-->
+<view wx:if='{{is_authorize}}' class='home'>
+  <view>已授权显示</view>
+</view>
+<view wx:else>
+  <authorize-login bindisAuthoruze='getIsAuthoruze'></authorize-login>
+</view>
